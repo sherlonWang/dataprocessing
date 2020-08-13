@@ -17,7 +17,6 @@ public class TextFileUtil {
 
     /**
      * 获取数据表头
-     *
      * @param file 文本类文件
      * @param pos  表头所在行
      * @return
@@ -49,12 +48,19 @@ public class TextFileUtil {
         return new ArrayList<>();
     }
 
+    /**
+     * 解析文本类文件
+     * @param file 文本文件
+     * @param pos 开始行数 不传默认为1
+     * @param separator 分隔符
+     * @return
+     */
     public static List<Map<String, String>> getTextFileData(File file, Integer pos, String separator) {
         if (file == null || !file.exists()) {
             throw new RuntimeException("文件不存在");
         }
-        if (pos == null || pos < 0) {
-            pos = 0;
+        if (pos == null || pos < 2) {
+            pos = 1;
         }
         if (StrUtil.isBlank(separator)) {
             separator = "\\s+";
@@ -91,5 +97,15 @@ public class TextFileUtil {
             e.printStackTrace();
         }
         return null;
+    }
+
+    /**
+     * 解析文本类文件
+     * @param file 文本文件
+     * @param separator 分隔符
+     * @return
+     */
+    public static List<Map<String, String>> getTextFileData(File file, String separator) {
+        return getTextFileData(file,1,separator);
     }
 }

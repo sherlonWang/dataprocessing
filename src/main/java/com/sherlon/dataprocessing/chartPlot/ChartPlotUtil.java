@@ -163,7 +163,7 @@ public class ChartPlotUtil implements Serializable {
 
 
     /**
-     * 绘制分配型曲线图
+     * 绘制分类型曲线图
      * @param title      图表标题
      * @param xAxisLabel x轴标题
      * @param yAxisLabel y轴标题
@@ -205,7 +205,7 @@ public class ChartPlotUtil implements Serializable {
     }
 
     /**
-     * 绘制分配型曲线图
+     * 绘制分类型曲线图
      * @param title      图表标题
      * @param xAxisLabel x轴标题
      * @param yAxisLabel y轴标题
@@ -217,7 +217,7 @@ public class ChartPlotUtil implements Serializable {
     }
 
     /**
-     * 保存图拍呢至本地
+     * 保存图片至本地
      * @param outputPath 图片输出路径
      * @param chart chart
      */

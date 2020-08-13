@@ -118,5 +118,12 @@ class DataprocessingApplicationTests {
         }
     }
 
+    @Test
+    void test3(){
+        File file = new File("/Users/sherlonwang/Desktop/test.txt");
+        List<Map<String, String>> data = TextFileUtil.getTextFileData(file,0," ");
+        System.out.println(data);
+    }
+
 
 }

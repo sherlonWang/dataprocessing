@@ -99,7 +99,7 @@ public class OrientExcelUtil {
     }
 
     /**
-     * 获取sheet总行数
+     * 根据sheet下标获取sheet
      *
      * @param workbook   工作簿
      * @param sheetIndex sheet下标
@@ -118,7 +118,7 @@ public class OrientExcelUtil {
 
 
     /**
-     * 获取sheet总行数
+     * 根据sheet名称获取sheet
      *
      * @param workbook  工作簿
      * @param sheetName sheet名称
